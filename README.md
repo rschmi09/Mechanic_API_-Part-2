@@ -3,8 +3,17 @@ README.md
 -------------------------------------
 Project Overview
 -------------------------------------
-Backend Specialization 01 MODULE PROJECT
 CURRENT PROJECT GOAL:
+Backend Module 02 Assignment: Adding Documentaion and Testing
+
+Utilize Swagger to create documentation for each endpoint for the 
+Mechanic API. Include detailed explanations and examples of input and output data. 
+Utilize unittest to create a testcase for each endpoint ensuring properfunctionality of all Mechanic API resorces.
+
+---
+
+Backend Specialization 01 MODULE PROJECT GOAL:
+
 Apply advanced techniques learned through Lessons 6-9 to Mechanic API:
 - Rate Limiting
 - Token Authentification
@@ -12,7 +21,7 @@ Apply advanced techniques learned through Lessons 6-9 to Mechanic API:
 
 Implement a new Blueprint for the Mechanic Shop Inventory
 
-
+---
 ORIGINAL PROJECT GOAL:
 
 Expand upon implemented customer blueprint with Marshmallow schemas and completed all CRUD routes in and Application Factory Pattern by adding blueprints and routes for the remaining models: 'mechanic' and 'service_ticket'.
@@ -92,13 +101,19 @@ Mechanic_API
 |    |_ __init__.py
 |    |_ extensions.py
 |    |_ models.py
+|    |
+|    |_ tests
+|         |_test_customer.py      
+|         |_test_inventory.py 
+|         |_test_mechanic.py 
+|         |_test_service_ticket.py 
 |
 |_app.py
 |_config.py
 |_filestructure.txt
 |_Mechanic_API.postman_collection.json
 |_README.md
-|_requirements.txt
+|_requirements_swagger.txt
 
 
 -------------------------------------
