@@ -6,9 +6,9 @@ info:
   description: "A mechanic shop API recording customers, mechanics, 
                 service tickets, inventory, and their relationships"
   version: "1.0.0"
-host: "127.0.0.1:5000"
+host: "mechanic-api-part-2-1.onrender.com"
 schemes:
-  - "http"
+  - "https"
 consumes:
   - "application/json"
 produces:
