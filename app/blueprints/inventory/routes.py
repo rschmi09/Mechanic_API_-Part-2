@@ -60,7 +60,7 @@ def update_item(inventory_id):
         return jsonify({'error': 'Item not found.'}), 404
     
     try:
-        item_data = inventory_schema.load(request.json)
+        item_data = inventory_schema.load(request.json, partial=True)
     except ValidationError as e:
         return jsonify(e.messages), 400
     

@@ -61,7 +61,7 @@ def update_service_ticket(service_ticket_id):
         return jsonify({'error': 'Service_Ticket not found.'}), 404
     
     try:
-        service_ticket_data = service_ticket_schema.load(request.json)
+        service_ticket_data = service_ticket_schema.load(request.json, partial=True)
     except ValidationError as e:
         return jsonify(e.messages), 400
     

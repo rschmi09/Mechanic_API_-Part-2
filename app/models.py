@@ -24,8 +24,8 @@ service_mechanic = db.Table(
 service_inventory = db.Table(
     'service_inventory',
     Base.metadata,
-    db.Column('service_id', db.ForeignKey('service_tickets.id', primary_key=True)),
-    db.Column('inventory_id', db.ForeignKey('inventories.id', primary_key=True))
+    db.Column('service_id', db.ForeignKey('service_tickets.id'), primary_key=True),
+    db.Column('inventory_id', db.ForeignKey('inventories.id'), primary_key=True)
 )
 
 
