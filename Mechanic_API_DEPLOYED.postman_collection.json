@@ -1,10 +1,10 @@
 {
   "info": {
-    "_postman_id": "6deca782-6d6a-45fb-b17c-c0b6c8fb2f7f",
-    "name": "Mechanic_API Copy",
+    "_postman_id": "0bb79e1d-3929-45e2-b6b1-2b9868ad192e",
+    "name": "Mechanic_API_DEPLOYED",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "51611297",
-    "_collection_link": "https://go.postman.co/collection/51611297-6deca782-6d6a-45fb-b17c-c0b6c8fb2f7f?source=collection_link"
+    "_collection_link": "https://go.postman.co/collection/51611297-0bb79e1d-3929-45e2-b6b1-2b9868ad192e?source=collection_link"
   },
   "item": [
     {
@@ -13,6 +13,9 @@
         {
           "name": "Create Customer",
           "request": {
+            "auth": {
+              "type": "noauth"
+            },
             "method": "POST",
             "header": [],
             "body": {
@@ -25,15 +28,13 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:5000/customers",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/customers",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "customers"
               ]
@@ -50,15 +51,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/customers",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/customers",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "customers"
               ]
@@ -75,18 +74,16 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/customers/3",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/customers/1",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "customers",
-                "3"
+                "1"
               ]
             }
           },
@@ -110,44 +107,15 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:5000/customers/3",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/customers",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
-                "customers",
-                "3"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Delete Customer",
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "DELETE",
-            "header": [],
-            "url": {
-              "raw": "http://127.0.0.1:5000/customers/3",
-              "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
-              "port": "5000",
-              "path": [
-                "customers",
-                "3"
+                "customers"
               ]
             }
           },
@@ -171,15 +139,13 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:5000/customers/login",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/customers/login",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "customers",
                 "login"
@@ -213,15 +179,13 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:5000/customers",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/customers",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "customers"
               ]
@@ -240,7 +204,7 @@
               "bearer": [
                 {
                   "key": "token",
-                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg5NjU4MzcsImlhdCI6MTc3ODk2MjIzNywic3ViIjoiMSJ9.pm25RokmUYw9MYC1nJBGqngdqrATK2X8IjlBDMQD0Kc",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODAyNjUwMTYsImlhdCI6MTc4MDI2MTQxNiwic3ViIjoiMSJ9.wqwCmO3yf-H3sqm8amR_5tpqOTUr8KeoSqgH_MJ-LW4",
                   "type": "string"
                 }
               ]
@@ -252,18 +216,15 @@
               "raw": ""
             },
             "url": {
-              "raw": "http://127.0.0.1:5000/customers/my-tickets",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/customers",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
-                "customers",
-                "my-tickets"
+                "customers"
               ]
             }
           },
@@ -277,6 +238,9 @@
         {
           "name": "Create Machanic",
           "request": {
+            "auth": {
+              "type": "noauth"
+            },
             "method": "POST",
             "header": [],
             "body": {
@@ -289,15 +253,13 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:5000/mechanics",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/mechanics",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "mechanics"
               ]
@@ -314,15 +276,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/mechanics",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/mechanics",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "mechanics"
               ]
@@ -339,18 +299,16 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/mechanics/2",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/mechanics/1",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "mechanics",
-                "2"
+                "1"
               ]
             }
           },
@@ -366,7 +324,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"email\": \"bneel@email.com\",\r\n    \"id\": 2,\r\n    \"name\": \"Brian McNeil\",\r\n    \"phone\": \"123-456-7890\",\r\n    \"salary\": 45000.0\r\n}",
+              "raw": "{\r\n    \"name\": \"Charlie Baker\",\r\n    \"email\": \"cbaker@email.com\",\r\n    \"phone\": \"123-456-7890\",\r\n    \"salary\": 46000\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -374,18 +332,16 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:5000/mechanics/2",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/mechanics/1",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "mechanics",
-                "2"
+                "1"
               ]
             }
           },
@@ -400,18 +356,16 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/mechanics/2",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/mechanics/1",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "mechanics",
-                "2"
+                "1"
               ]
             }
           },
@@ -426,205 +380,16 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/mechanics/workload",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/mechanics/workload",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "mechanics",
                 "workload"
-              ]
-            }
-          },
-          "response": []
-        }
-      ]
-    },
-    {
-      "name": "Service_Ticket",
-      "item": [
-        {
-          "name": "Create Service_Ticket",
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n    \"vin\": \"12345678912345678\",\r\n    \"service_date\": \"2026-04-16\",\r\n    \"service_desc\": \"customer states: rattle sounds coming from rear of vehicle.\",\r\n    \"customer_id\": 1\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "http://127.0.0.1:5000/service_tickets",
-              "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
-              "port": "5000",
-              "path": [
-                "service_tickets"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Get All Service_Tickets",
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "http://127.0.0.1:5000/service_tickets",
-              "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
-              "port": "5000",
-              "path": [
-                "service_tickets"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Get Specific Service_Ticket",
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "http://127.0.0.1:5000/service_tickets/1",
-              "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
-              "port": "5000",
-              "path": [
-                "service_tickets",
-                "1"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Update Specific Service_Ticket",
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "PUT",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n    \"vin\": \"12345678912345678\",\r\n    \"service_date\": \"2026-02-17\",\r\n    \"service_desc\": \"customer states: loud rattle near front of engine on start-up. sound decreases as drives.\",\r\n    \"customer_id\": 1\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "http://127.0.0.1:5000/service_tickets/1",
-              "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
-              "port": "5000",
-              "path": [
-                "service_tickets",
-                "1"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Assign/Remove Mechanic",
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "PUT",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n    \"add_mechanic_ids\": [3],\r\n    \"remove_mechanic_ids\": [2]\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "http://127.0.0.1:5000/service_tickets/5/edit",
-              "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
-              "port": "5000",
-              "path": [
-                "service_tickets",
-                "5",
-                "edit"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Delete Service_Ticket",
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "DELETE",
-            "header": [],
-            "url": {
-              "raw": "http://127.0.0.1:5000/service_tickets/1",
-              "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
-              "port": "5000",
-              "path": [
-                "service_tickets",
-                "1"
               ]
             }
           },
@@ -653,15 +418,13 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:5000/inventories",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/inventories",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "inventories"
               ]
@@ -672,18 +435,19 @@
         {
           "name": "Get All Inventory Items",
           "request": {
+            "auth": {
+              "type": "noauth"
+            },
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/inventories",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/inventories",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "inventories"
               ]
@@ -694,21 +458,22 @@
         {
           "name": "Get Specific Inventory Item",
           "request": {
+            "auth": {
+              "type": "noauth"
+            },
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/inventories/3",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/inventories/1",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "inventories",
-                "3"
+                "1"
               ]
             }
           },
@@ -717,6 +482,9 @@
         {
           "name": "Update Inventory Item",
           "request": {
+            "auth": {
+              "type": "noauth"
+            },
             "method": "PUT",
             "header": [],
             "body": {
@@ -729,41 +497,241 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:5000/inventories/3",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/inventories/1",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "inventories",
-                "3"
+                "1"
               ]
             }
           },
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Delete Inventory Item",
           "request": {
+            "auth": {
+              "type": "noauth"
+            },
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:5000/inventories/3",
-              "protocol": "http",
+              "raw": "https://mechanic-api-part-2-1.onrender.com/inventories/1",
+              "protocol": "https",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
               ],
-              "port": "5000",
               "path": [
                 "inventories",
-                "3"
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Service_Ticket",
+      "item": [
+        {
+          "name": "Create Service_Ticket",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"vin\": \"12345678912345678\",\r\n    \"service_date\": \"2026-04-16\",\r\n    \"service_desc\": \"customer states: rattle sounds coming from rear of vehicle.\",\r\n    \"customer_id\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://mechanic-api-part-2-1.onrender.com/service_tickets",
+              "protocol": "https",
+              "host": [
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "service_tickets"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Service_Tickets",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://mechanic-api-part-2-1.onrender.com/service_tickets",
+              "protocol": "https",
+              "host": [
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "service_tickets"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Specific Service_Ticket",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://mechanic-api-part-2-1.onrender.com/service_tickets/1",
+              "protocol": "https",
+              "host": [
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "service_tickets",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Specific Service_Ticket",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"vin\": \"12345678912345678\",\r\n    \"service_date\": \"2026-02-17\",\r\n    \"service_desc\": \"customer states: loud rattle near front of engine on start-up. sound decreases as drives.\",\r\n    \"customer_id\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://mechanic-api-part-2-1.onrender.com/service_tickets/1",
+              "protocol": "https",
+              "host": [
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "service_tickets",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Assign/Remove Mechanic",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"add_mechanic_ids\": [3],\r\n    \"remove_mechanic_ids\": [2]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://mechanic-api-part-2-1.onrender.com/service_tickets/1/edit",
+              "protocol": "https",
+              "host": [
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "service_tickets",
+                "1",
+                "edit"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Inventory Item to Service_Ticket",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "https://mechanic-api-part-2-1.onrender.com/service_tickets/1/edit/1",
+              "protocol": "https",
+              "host": [
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "service_tickets",
+                "1",
+                "edit",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Service_Ticket",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://mechanic-api-part-2-1.onrender.com/service_tickets/1",
+              "protocol": "https",
+              "host": [
+                "mechanic-api-part-2-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "service_tickets",
+                "1"
               ]
             }
           },
