@@ -1,3 +1,7 @@
+# config.py
+
+import os
+
 
 class DevelopmentConfig:
     SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:root2@localhost:3306/mechanic_db'
@@ -11,6 +15,7 @@ class TestConfig:
     CACHE_TYPE = 'SimpleCache'
 
 class ProductConfig:
-    pass
+    SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
+    CACHE_TYPE = 'SimpleCache'
 
 

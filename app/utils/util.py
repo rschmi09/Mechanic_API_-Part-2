@@ -1,5 +1,7 @@
 # Mechanic_API/App/utils/util.py
 
+import os
+
 import jose
 from jose import jwt
 from jose.exceptions import JWTError, ExpiredSignatureError
@@ -8,7 +10,7 @@ from functools import wraps
 from flask import request, jsonify
 
 
-SECRET_KEY = 'super secret secrets'
+SECRET_KEY = os.environ.get('SECRET_KEY') or 'super secret secrets'
 
 def encode_token(customer_id):
     payload = {
