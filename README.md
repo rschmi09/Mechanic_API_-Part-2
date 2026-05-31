@@ -4,6 +4,12 @@ README.md
 Project Overview
 -------------------------------------
 CURRENT PROJECT GOAL:
+Backend Module 02 Module Project: API Deployment and CI/CD Pipeline
+
+Deploy Mechanic API and implement a CI/CD Pipeline so that project can continue to to be refined and kept up to date.
+
+---
+
 Backend Module 02 Assignment: Adding Documentaion and Testing
 
 Utilize Swagger to create documentation for each endpoint for the 
@@ -32,7 +38,7 @@ Test each route as it is created in Postman inside a collection. Once project is
 -------------------------------------
 Project Installations
 -------------------------------------
-(also in requirements_swagger.txt)
+(also in requirements.txt)
 
 blinker==1.9.0
 cachelib==0.14.0
@@ -48,6 +54,7 @@ Flask-SQLAlchemy==3.1.1
 flask-swagger==0.2.14
 flask-swagger-ui==5.32.6
 greenlet==3.5.0
+gunicorn==26.0.0
 itsdangerous==2.2.0
 Jinja2==3.1.6
 limits==5.8.0
@@ -57,6 +64,7 @@ marshmallow-sqlalchemy==1.5.0
 mysql-connector-python==9.7.0
 ordered-set==4.1.0
 packaging==26.2
+psycopg2==2.9.12
 pyasn1==0.6.3
 python-jose==3.5.0
 PyYAML==6.0.3
@@ -108,10 +116,11 @@ Mechanic_API
 |         |_test_mechanic.py 
 |         |_test_service_ticket.py 
 |
-|_app.py
+|_flask_app.py
+|_wsgi.py
 |_config.py
 |_filestructure.txt
-|_Mechanic_API.postman_collection.json
+|_Mechanic_API_DEPLOYED.postman_collection.json
 |_README.md
 |_requirements_swagger.txt
 
