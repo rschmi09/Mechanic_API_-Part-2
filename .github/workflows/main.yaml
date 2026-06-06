@@ -83,11 +83,19 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
-      - name: Deploy to production
-        uses: johnbeynon/render-deploy-action@v0.0.8
-        with:
-          service-id: ${{ secrets.SERVICE_ID }}
-          api-key: ${{ secrets.RENDER_API_KEY }}
+      #- name: Deploy to production
+        #uses: johnbeynon/render-deploy-action@v0.0.8
+        #with:
+          #service-id: ${{ secrets.SERVICE_ID }}
+          #api-key: ${{ secrets.RENDER_API_KEY }}
+
+      # the delpoy hook seems to be out of date as i keep receiving
+      # a 405 error in GitHub actions
+
+      - name: Deploy to Render
+        run: curl -X POST "RENDER_API_KEY"
+        env: 
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
 
 
 
