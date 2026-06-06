@@ -27,6 +27,12 @@ def create_app(config_name):
     app = Flask(__name__)
     app.config.from_object(f'config.{config_name}')
 
+    @app.reoute("/")
+    def home():
+        return {
+            "message": "Mechanic API is running",
+            "docs": "/api/docs"
+        }
 
     # Initialize Extensions
     ma.init_app(app)
@@ -42,6 +48,7 @@ def create_app(config_name):
     #app.register_blueprint(mechanics_service_tickets_bp, url_prefix='/mechanics_service_tickets')
     app.register_blueprint(inventories_bp, url_prefix='/inventories')
     app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
+
 
     return app
 
