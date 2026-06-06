@@ -93,9 +93,9 @@ jobs:
       # a 405 error in GitHub actions
 
       - name: Deploy to Render
-        run: curl -X POST "RENDER_API_KEY"
+        run: curl -X POST "RENDER_DEPLOY_HOOK"
         env: 
-          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          RENDER_API_KEY: ${{ secrets.RENDER_DEPLOY_HOOK }}
 
 
 
