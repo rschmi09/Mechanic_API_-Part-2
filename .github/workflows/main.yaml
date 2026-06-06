@@ -97,6 +97,10 @@ jobs:
         env: 
           RENDER_API_KEY: ${{ secrets.RENDER_DEPLOY_HOOK }}
 
+      - name: Check if secret looks like URL
+        run: echo "$RENDER_DEPLOY_HOOK"
+        env: 
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
 
 
 
