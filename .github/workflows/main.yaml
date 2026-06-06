@@ -92,15 +92,17 @@ jobs:
       # the delpoy hook seems to be out of date as i keep receiving
       # a 405 error in GitHub actions
 
+      - name: Check if secret looks like URL
+        run: echo "$RENDER_DEPLOY_HOOK"
+        env: 
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+
       - name: Deploy to Render
         run: curl -X POST "$RENDER_DEPLOY_HOOK"
         env: 
           RENDER_API_KEY: ${{ secrets.RENDER_DEPLOY_HOOK }}
 
-      - name: Check if secret looks like URL
-        run: echo "$RENDER_DEPLOY_HOOK"
-        env: 
-          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+
 
 
 
