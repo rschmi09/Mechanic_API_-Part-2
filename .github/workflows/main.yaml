@@ -92,22 +92,22 @@ jobs:
       # the delpoy hook seems to be out of date as i keep receiving
       # a 405 error in GitHub actions
 
-      - name: Debug URL safely
-        run: |
-          python - << 'EOF'
-          import os
-          url = os.environ["RENDER_DEPLOY_HOOK"]
-          print("Length:", len(url))
-          print("Starts with:", url[:30])
-          print("Ends with:", url[-10:])
-          EOF
-        env:
-          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+      #- name: Debug URL safely
+        #run: |
+          #python - << 'EOF'
+          #import os
+          #url = os.environ["RENDER_DEPLOY_HOOK"]
+          #print("Length:", len(url))
+          #print("Starts with:", url[:30])
+          #print("Ends with:", url[-10:])
+          #EOF
+        #env:
+          #RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
 
       - name: Deploy to Render
         run: curl -X POST "$RENDER_DEPLOY_HOOK"
         env: 
-          RENDER_API_KEY: ${{ secrets.RENDER_DEPLOY_HOOK }}
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
 
 
 
